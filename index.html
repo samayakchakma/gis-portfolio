@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samayak Chakma | GIS Portfolio</title>
+  <meta name="description" content="GIS portfolio of Samayak Chakma, Geological Engineering student at the University of Saskatchewan: spatial analysis, habitat suitability modeling, bathymetry and cartography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#about" class="nav-logo">Samayak Chakma</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= BIO ================= -->
+    <section id="about" class="bio container">
+      <div class="bio-photo">
+        <!-- Replace images/profile.jpg with your own photo (square works best) -->
+        <img src="images/profile.jpg" alt="Portrait of Samayak Chakma">
+      </div>
+      <div class="bio-text">
+        <p class="eyebrow">GIS Portfolio</p>
+        <h1>Samayak Chakma</h1>
+        <p class="bio-role">Geological Engineering Student &middot; University of Saskatchewan</p>
+        <p>
+          I'm a second-year Geological Engineering student in the Engineering Co-op Internship Program at the
+          University of Saskatchewan. I use GIS to turn raw spatial data into maps and models that support
+          decisions, from habitat suitability analysis and lake bathymetry to census mapping and exploration
+          drillhole data.
+        </p>
+        <p>
+          My work combines spatial analysis in ArcGIS Pro and QGIS with data handling in Python and SQL.
+          Outside the classroom, I'm the Student Chair for the Canadian Mineral Processors Society (SK-MB Branch)
+          and a fabrication specialist on the USask Steel Bridge Team. I'm currently looking for co-op opportunities in
+          geoscience, mining and environmental work.
+        </p>
+        <div class="bio-links">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/sam-chakma/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/samayakchakma" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">A selection of mapping and spatial analysis work. Click any map to view it full size.</p>
+
+        <!-- Project 1 -->
+        <article class="project">
+          <a class="project-media" href="images/bengal-tiger-habitat.jpg" target="_blank" rel="noopener">
+            <img src="images/bengal-tiger-habitat.jpg" alt="Bengal tiger habitat suitability map of the Sundarbans, Bangladesh" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-num">01</p>
+            <h3>Bengal Tiger Habitat Suitability in the Sundarbans, Bangladesh</h3>
+            <ul class="tags">
+              <li>Habitat Suitability Modeling</li>
+              <li>Multi-Criteria Evaluation</li>
+              <li>Weighted Overlay</li>
+              <li>Raster Analysis</li>
+              <li>Remote Sensing Data</li>
+            </ul>
+            <p>
+              Built a habitat suitability index (0&ndash;100) for Bengal tigers across the Sundarbans mangrove forest.
+              I combined environmental and human-impact layers from Global Mangrove Watch, the Joint Research Centre,
+              the US Geological Survey and OpenStreetMap (Geofabrik), then standardized, weighted and overlaid them
+              to identify the most and least suitable habitat.
+            </p>
+            <p>
+              The results are clipped to the Sundarbans Reserved Forest and shown with the East, West and South
+              protected-area boundaries from Protected Planet. The map is projected in Gulshan 303 / Bangladesh
+              Transverse Mercator and includes a locator inset of Bangladesh.
+            </p>
+            <a class="project-link" href="maps/bengal-tiger-habitat-suitability.pdf" target="_blank" rel="noopener">View full map (PDF) &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project reverse">
+          <a class="project-media" href="images/lac-st-cyr-bathymetry.jpg" target="_blank" rel="noopener">
+            <img src="images/lac-st-cyr-bathymetry.jpg" alt="Bathymetric map of Lac St. Cyr, Alberta" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-num">02</p>
+            <h3>Bathymetric Map of Lac St. Cyr, Alberta</h3>
+            <ul class="tags">
+              <li>Spatial Interpolation</li>
+              <li>Surface Modeling</li>
+              <li>Contour Generation</li>
+              <li>Cartography</li>
+              <li>ArcGIS Pro</li>
+            </ul>
+            <p>
+              Created a continuous depth surface for Lac St. Cyr from Alberta Geological Survey data.
+              I interpolated the depth measurements into a raster, then generated labelled 2&nbsp;m contour
+              lines to show the lake-bed shape.
+            </p>
+            <p>
+              The map shows a deep northern basin reaching about 21&nbsp;m and shallower southern basins
+              of 10&ndash;12&nbsp;m. It uses a graduated depth colour ramp, a latitude/longitude graticule and a scale bar
+              so the lake's shape and depth are easy to read.
+            </p>
+            <a class="project-link" href="maps/lac-st-cyr-bathymetry.pdf" target="_blank" rel="noopener">View full map (PDF) &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project">
+          <a class="project-media" href="images/regina-population-density.jpg" target="_blank" rel="noopener">
+            <img src="images/regina-population-density.jpg" alt="Population density by neighbourhood map of Regina, Saskatchewan" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-num">03</p>
+            <h3>Population Density by Neighbourhood: Regina, Saskatchewan</h3>
+            <ul class="tags">
+              <li>Choropleth Mapping</li>
+              <li>Attribute Joins</li>
+              <li>Census Data</li>
+              <li>Data Classification</li>
+              <li>Cartography</li>
+            </ul>
+            <p>
+              Mapped population density (people per km&sup2;) for Regina's neighbourhoods using 2021 census data
+              from Statistics Canada and neighbourhood boundaries from the City of Regina. I joined the population
+              figures to the boundary polygons and calculated density from each neighbourhood's area.
+            </p>
+            <p>
+              Neighbourhoods are grouped into seven density classes on a sequential colour scheme. The map shows
+              dense pockets such as Centre Square and Harbour Landing next to lower-density areas like Warehouse,
+              and includes labels and a written summary so readers without a GIS background can follow it.
+            </p>
+            <a class="project-link" href="maps/regina-population-density.pdf" target="_blank" rel="noopener">View full map (PDF) &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project reverse">
+          <!-- Swap this placeholder for a screenshot of your 3D model or dashboard:
+               <a class="project-media" href="images/drillhole-model.jpg" target="_blank" rel="noopener">
+                 <img src="images/drillhole-model.jpg" alt="3D geological model from drillhole data" loading="lazy">
+               </a> -->
+          <div class="project-media placeholder" aria-hidden="true">
+            <span>3D Geological Model</span>
+          </div>
+          <div class="project-body">
+            <p class="project-num">04</p>
+            <h3>Exploration Drillhole Database &amp; 3D Model</h3>
+            <ul class="tags">
+              <li>SQL</li>
+              <li>Python</li>
+              <li>GemPy</li>
+              <li>Power BI</li>
+              <li>3D Geological Modeling</li>
+            </ul>
+            <p>
+              Built a relational SQL database to clean and manage exploration drillhole tables: Collar, Survey,
+              Lithology and Assay. Structuring the data this way made it consistent and ready for spatial
+              analysis and modeling.
+            </p>
+            <p>
+              I used the cleaned data to generate 3D geological models in GemPy, and built Power BI dashboards
+              to visualize drillhole locations and key exploration metrics.
+            </p>
+            <a class="project-link" href="https://github.com/samayakchakma" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 5: fill in the bracketed text with your fifth project -->
+        <article class="project">
+          <!-- Add your map image to the images folder, then replace the placeholder below:
+               <a class="project-media" href="images/your-map.jpg" target="_blank" rel="noopener">
+                 <img src="images/your-map.jpg" alt="[Describe your map]" loading="lazy">
+               </a> -->
+          <div class="project-media placeholder" aria-hidden="true">
+            <span>[Project 5 Map]</span>
+          </div>
+          <div class="project-body">
+            <p class="project-num">05</p>
+            <h3>[Project 5 Title]</h3>
+            <ul class="tags">
+              <li>[Skill 1]</li>
+              <li>[Skill 2]</li>
+              <li>[Skill 3]</li>
+              <li>[Software]</li>
+            </ul>
+            <p>
+              [What was the goal of the project, and what area and data did you use?]
+            </p>
+            <p>
+              [What analysis did you do, and what does the final map show?]
+            </p>
+            <a class="project-link" href="maps/your-map.pdf" target="_blank" rel="noopener">View full map (PDF) &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Open to co-op opportunities in geoscience, mining and GIS.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="mailto:samayakchakma@icloud.com">samayakchakma@icloud.com</a></li>
+        <li><a href="https://www.linkedin.com/in/sam-chakma/" target="_blank" rel="noopener">linkedin.com/in/sam-chakma</a></li>
+        <li><a href="https://github.com/samayakchakma" target="_blank" rel="noopener">github.com/samayakchakma</a></li>
+      </ul>
+    </div>
+    <p class="copyright container">&copy; 2026 Samayak Chakma</p>
+  </footer>
+
+</body>
+</html>
